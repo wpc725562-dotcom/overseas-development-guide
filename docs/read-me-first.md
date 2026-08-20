@@ -28,8 +28,8 @@
 
 ---
 **下一步**：根据你的答案，进入对应板块——
-- 想走学历路线 → [留学规划总览](study-01-overview.md)
-- 想直接找工作 → [海外求职总览](career-01-overview.md)
+- 想走学历路线 → [留学规划总览](study-abroad/study-01-overview.md)
+- 想直接找工作 → [海外求职总览](career-immigration/career-01-overview.md)
 
 ---
 [← 返回首页](../README.md)

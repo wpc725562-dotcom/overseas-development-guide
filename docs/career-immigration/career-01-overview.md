@@ -12,6 +12,7 @@
 | [面试准备](career-05-interview.md) | 技术面 / 行为面 (Behavioral)、谈薪 |
 | [工作签证](career-06-work-visa.md) | 各国工签类型与申请（国别入内） |
 | [移民路径](career-07-immigration.md) | 技术移民、雇主担保、永居 PR |
+| ⚡ **按国别速查** | **[澳洲签证/语言/平台](countries/australia.md) · [日本人文签/语言/平台](countries/japan.md)** · [国别索引](countries/_index.md) |
 
 ## 二、前端关键词（技术方向为例）
 
