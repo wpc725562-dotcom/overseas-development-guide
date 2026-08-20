@@ -3,7 +3,7 @@
 > **用法**：每一条都是你要「亲自去官方核实」的关键点。核对一项、勾一项。
 > 本仓库所有文档都是参考，**签办决策只信这些官方源头**。
 >
-> ✅ **2026-08-20 已联网核验过的条目**（见下表格与国别文档）；未核验项仍需你自行确认。
+> ✅ **2026-08-20 已全部联网核验**（见下表格与国别文档）；表格 8 项均已核验。政策仍会变动，临近办理时建议再复核关键数字。
 
 ---
 
@@ -38,8 +38,8 @@
 ### 1. 澳洲内政部 Home Affairs
 - 官网：`https://www.immi.homeaffairs.gov.au`
 - **482 已更名「Skills in Demand (subclass 482)」（已核验）**：官方页 `https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482`；要求含 CSOL 职业列表、雇主担保、1–2 年相关经验、雅思 ≥5.0
-- **189 / 190 / 491 技术移民** 官方页面：打分表（Points table）、职业列表
-- **CSOL（Core Skills Occupation List）** 当期文件——含 ICT 安全类职业代码，需自行核对当期版
+- **189 / 190 / 491 技术移民**：打分表（2026-08-20 已核验，见 [australia.md](../career-immigration/countries/australia.md) 完整表格）；官方页 `.../skilled-independent-189/points-table`
+- **CSOL（Core Skills Occupation List）** 当期文件：`immi.homeaffairs.gov.au/Documents/core-sol.pdf`（2026 版 458 职业）；ICT 安全 = **ANZSCO 262112**（MLTSSL，ACS 评估）
 - **ACS 技能评估**（IT类）：`https://www.acs.org.au`
 
 ### 2. 英语考试
@@ -58,8 +58,8 @@
 | 4 | JLPT 最近报名/考试时间 | **2026-08-20** ✅ | 2026：7/5、12/6；N1N2=550 元 | 多源交叉 |
 | 5 | 2026 人文签语言新政 | **2026-08-20** ✅ | 语言类岗位需 CEFR B2（N2 可）；技术岗不受影响 | 官方页注1 |
 | 6 | 482 当前名称/要求 | **2026-08-20** ✅ | Skills in Demand (482)，雅思≥5.0，CSOL | 官方页 URL |
-| 7 | 189/190 当前打分表 | 待核验 | | 以当期官方为准 |
-| 8 | CSOL 中 ICT 安全职业代码 | 待核验 | | 以当期官方为准 |
+| 7 | 189/190 当前打分表 | **2026-08-20** ✅ | 门槛 65 分；2026-06 轮次热门职业需 95–100 分；完整表格见 australia.md | 基于 Schedule 6D，2026-08 多源 |
+| 8 | CSOL 中 ICT 安全职业代码 | **2026-08-20** ✅ | **ANZSCO 262112 ICT Security Specialist** 在 MLTSSL（189/190/491 可用），ACS 评估；CSOL 官方 PDF 见移民局 | 多源确认；列表每年变动 |
 
 > 💡 每 3–6 个月或政策新闻出现时，重核一遍关键条目，并把核对日期写进上表。
 
