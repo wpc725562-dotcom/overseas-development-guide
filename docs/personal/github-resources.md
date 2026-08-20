@@ -1,9 +1,14 @@
+﻿---
+title: "🌟 GitHub 高星项目精选"
+description: "按你路线抓取的 top-star 资源"
+---
+
 # 🌟 GitHub 高星项目精选 · Top-Starred Repos
 
 > **数据来源**：GitHub Search API 实时抓取（`api.github.com`），抓取时间 **2026-08-20**，star 数为当时快照。
 > 用途：作为 web 不可用时的**联网核验通道**，以及你路线上各环节的**免费学习/准备资源**。
 
-> ⚠️ 说明：GitHub 项目是社区资源，**不是官方签证/移民信息源**。签证政策仍以 [official-links.md](official-links.md) 的官方页面为准；这里解决的是「学习资源、简历、面试、CTF」等实操问题。
+> ⚠️ 说明：GitHub 项目是社区资源，**不是官方签证/移民信息源**。签证政策仍以 [official-links.md](official-links) 的官方页面为准；这里解决的是「学习资源、简历、面试、CTF」等实操问题。
 
 ---
 
@@ -69,4 +74,4 @@
 > 💡 建议定期用本页的搜索方法（GitHub Search `sort=stars`）复查新趋势，替换掉过时项目。
 
 ---
-[← 回个人目录](_index.md) · [返回首页](../../README.md)
+[← 回个人目录](index) · [返回首页](/)

@@ -1,0 +1,38 @@
+{
+  "mouseover": [
+    {
+      "selector": ".VPLink",
+      "text": ["点击看看？"]
+    },
+    {
+      "selector": ".doc-banner",
+      "text": ["这篇文章看起来不错呢~"]
+    },
+    {
+      "selector": ".music-toggle",
+      "text": ["要来点音乐吗？"]
+    },
+    {
+      "selector": "a[href*='github']",
+      "text": ["这是 GitHub 链接哦~"]
+    }
+  ],
+  "click": {
+    "selector": ".music-toggle",
+    "text": ["♪ 春日影，真好听"]
+  },
+  "seasons": [
+    {
+      "date": "01/01",
+      "text": ["新年快乐！今年也要加油哦~"]
+    },
+    {
+      "date": "02/14",
+      "text": ["情人节快乐~"]
+    },
+    {
+      "date": "03/08",
+      "text": ["生日快乐！"]
+    }
+  ]
+}

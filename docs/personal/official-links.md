@@ -1,3 +1,8 @@
+﻿---
+title: "🔗 官方信息核对清单"
+description: "8/8 已核验 · 只信官方源头"
+---
+
 # 🔗 官方信息核对清单 · Official Sources Checklist
 
 > **用法**：每一条都是你要「亲自去官方核实」的关键点。核对一项、勾一项。
@@ -29,7 +34,7 @@
 
 ### 4. 日本求职相关官方/正规渠道
 - 厚生労働省「外国人雇用」信息服务：`https://www.mhlw.go.jp`（政策参考）
-- 各招聘平台（LinkedIn / daijob / Wantedly）非官方但可作渠道（见 [japan.md](../career-immigration/countries/japan.md)）
+- 各招聘平台（LinkedIn / daijob / Wantedly）非官方但可作渠道（见 [japan.md](../career-immigration/countries/japan)）
 
 ---
 
@@ -38,7 +43,7 @@
 ### 1. 澳洲内政部 Home Affairs
 - 官网：`https://www.immi.homeaffairs.gov.au`
 - **482 已更名「Skills in Demand (subclass 482)」（已核验）**：官方页 `https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482`；要求含 CSOL 职业列表、雇主担保、1–2 年相关经验、雅思 ≥5.0
-- **189 / 190 / 491 技术移民**：打分表（2026-08-20 已核验，见 [australia.md](../career-immigration/countries/australia.md) 完整表格）；官方页 `.../skilled-independent-189/points-table`
+- **189 / 190 / 491 技术移民**：打分表（2026-08-20 已核验，见 [australia.md](../career-immigration/countries/australia) 完整表格）；官方页 `.../skilled-independent-189/points-table`
 - **CSOL（Core Skills Occupation List）** 当期文件：`immi.homeaffairs.gov.au/Documents/core-sol.pdf`（2026 版 458 职业）；ICT 安全 = **ANZSCO 262112**（MLTSSL，ACS 评估）
 - **ACS 技能评估**（IT类）：`https://www.acs.org.au`
 
@@ -64,4 +69,4 @@
 > 💡 每 3–6 个月或政策新闻出现时，重核一遍关键条目，并把核对日期写进上表。
 
 ---
-[← 回个人目录](_index.md) · [返回首页](../../README.md)
+[← 回个人目录](index) · [返回首页](/)

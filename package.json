@@ -1,0 +1,19 @@
+{
+  "name": "overseas-development-guide",
+  "version": "1.0.0",
+  "private": true,
+  "description": "出国发展指南 · VitePress 在线网站",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "markdown-it-mathjax3": "^4.3.2",
+    "vitepress": "^1.6.3"
+  },
+  "allowScripts": {
+    "esbuild@0.21.5": true
+  }
+}

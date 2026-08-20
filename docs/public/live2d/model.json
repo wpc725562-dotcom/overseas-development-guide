@@ -1,0 +1,16 @@
+{
+  "version": "Sample 1.0.0",
+  "layout": {
+    "center_x": 0,
+    "center_y": 0,
+    "width": 2
+  },
+  "model": "data/model.moc",
+  "physics": "data/physics.json",
+  "textures": [
+    "data/textures/texture_00.png",
+    "data/textures/texture_01.png"
+  ],
+  "motions": {},
+  "expressions": []
+}

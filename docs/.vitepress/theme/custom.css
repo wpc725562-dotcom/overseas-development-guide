@@ -1,0 +1,473 @@
+/* ========== 樱花 Sakura 风格变量 ========== */
+:root {
+  /* 粉色降饱和，避免与橙色 accent 叠加过腻 */
+  --sakura-pink: #f5b8c4;
+  --sakura-deep: #d97a8c;
+  --sakura-light: #fff4f6;
+  --sakura-warm: #ffe9c9;
+  /* accent 改用更深的玫红，与粉色层级更清晰 */
+  --accent-color: #e4596f;
+  --site-content-width: 1180px;
+  --site-radius: 18px;
+  --site-shadow-sm: 0 8px 28px rgba(93, 47, 59, 0.07);
+  --site-shadow-lg: 0 18px 48px rgba(93, 47, 59, 0.14);
+
+  /* VitePress 默认变量覆盖 */
+  --vp-c-brand-1: #e4596f;
+  --vp-c-brand-2: #c8455e;
+  --vp-c-brand-3: #a8384f;
+  --vp-c-brand-soft: rgba(228, 89, 111, 0.14);
+
+  --vp-font-family-base: "Noto Sans SC", "Microsoft YaHei", "PingFang SC", sans-serif;
+  --vp-font-family-title: "Noto Serif SC", "Source Han Serif SC", "Microsoft YaHei", serif;
+  --vp-font-family-mono: "Fira Code", "Cascadia Code", monospace;
+}
+
+/* 暗黑模式：加一点夜樱蓝紫调，避免纯灰冷漠 */
+.dark {
+  --vp-c-bg: #1a1620;
+  --vp-c-bg-alt: #221d2a;
+  --vp-c-bg-elv: #272130;
+  --vp-c-bg-soft: #2c2536;
+  --sakura-light: rgba(245, 184, 196, 0.08);
+  --sakura-pink: #c98a98;
+}
+
+/* ========== 全局 ========== */
+body {
+  font-size: 16px;
+  /* 微弱的斜线网格纹理，消除大块留白的空洞感 */
+  background-image:
+    linear-gradient(to right, rgba(245,184,196,0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(245,184,196,0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+/* 暗黑模式用更冷的蓝紫调网格 */
+.dark body {
+  background-image:
+    linear-gradient(to right, rgba(201,138,152,0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(201,138,152,0.05) 1px, transparent 1px);
+}
+
+/* 滚动条 */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-thumb { background: var(--sakura-pink); border-radius: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+
+/* 选中 */
+::selection { background: var(--sakura-light); color: #333; }
+
+/* 链接 */
+.vp-doc a {
+  color: var(--accent-color);
+  transition: color 0.2s;
+}
+.vp-doc a:hover {
+  color: var(--vp-c-brand-2);
+}
+
+/* 代码块 */
+.vp-doc pre {
+  border-radius: 12px;
+}
+
+/* 引用块 */
+.vp-doc blockquote {
+  border-left-color: var(--sakura-pink);
+  background: var(--sakura-light);
+}
+
+/* 表格 */
+.vp-doc th {
+  background: var(--sakura-light);
+}
+
+/* ========== 导航栏定制 ========== */
+.VPNavBar {
+  background: rgba(255, 255, 255, 0.85) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.dark .VPNavBar {
+  background: rgba(26, 26, 26, 0.85) !important;
+}
+
+.VPNavBar.has-sidebar {
+  background: rgba(255, 255, 255, 0.85) !important;
+}
+
+.dark .VPNavBar.has-sidebar {
+  background: rgba(26, 26, 26, 0.85) !important;
+}
+
+/* ========== 首页定制 ========== */
+/* 隐藏 VitePress 默认 Hero */
+.VPHero { display: none; }
+
+/* 首页容器全宽 */
+.home-content {
+  max-width: none !important;
+  padding: 0 !important;
+}
+
+/* ========== 文章页 ========== */
+.doc-banner {
+  padding: 80px 24px 40px;
+  margin: -24px -24px 32px;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+  animation: banner-in 0.7s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+@keyframes banner-in {
+  from { opacity: 0; transform: translateY(-12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.doc-banner .doc-title {
+  font-size: 32px;
+  font-weight: 700;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.3;
+}
+.doc-breadcrumb {
+  max-width: 800px;
+  margin: 0 auto 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  align-items: center;
+  font-size: 12px;
+  color: rgba(255,255,255,.78);
+}
+.doc-breadcrumb a { color: #fff; text-decoration: none; }
+.doc-breadcrumb a:hover { text-decoration: underline; }
+
+.doc-banner .doc-meta {
+  max-width: 800px;
+  margin: 16px auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.doc-banner .doc-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.doc-banner .doc-tags a {
+  color: rgba(255,255,255,0.85);
+  padding: 2px 10px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 12px;
+  font-size: 12px;
+  transition: background 0.2s;
+}
+
+.doc-banner .doc-tags a:hover {
+  background: rgba(255,255,255,0.35);
+}
+
+@media (max-width: 768px) {
+  .doc-banner { padding: 64px 20px 28px; margin: 0 -20px 24px; }
+  .doc-banner .doc-title { font-size: 24px; }
+}
+
+/* ========== 页脚 ========== */
+.VPFooter {
+  border-top: 1px solid var(--vp-c-divider);
+}
+
+/* ========== 按钮 ========== */
+.VPButton.brand {
+  background: var(--accent-color) !important;
+  border-color: var(--accent-color) !important;
+}
+.VPButton.brand:hover {
+  background: var(--vp-c-brand-2) !important;
+}
+
+/* ========== 文章增强 ========== */
+.vp-doc .steps {
+  border-left: 3px solid var(--sakura-pink);
+  padding-left: 16px;
+  margin: 16px 0;
+  font-size: 15px;
+  color: var(--vp-c-text-1);
+}
+.vp-doc .steps p { margin: 6px 0; }
+
+/* ========== Live2D 看板娘 ========== */
+#live2d-widget,
+#live2d-widget canvas,
+#live2d-widget div {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* ========== 字体场景化：标题用衬线，正文用无衬线 ========== */
+/* 文章正文标题 */
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3,
+.vp-doc h4 {
+  font-family: var(--vp-font-family-title);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+/* 文章页横幅标题 */
+.doc-banner .doc-title {
+  font-family: var(--vp-font-family-title);
+}
+
+/* 首页各 section heading */
+.section-heading,
+.blog-list-section h2,
+.timeline-section h2,
+.site-stats h2,
+.tag-page h1 {
+  font-family: var(--vp-font-family-title);
+}
+
+/* 导航栏站点标题 */
+.VPNavBarTitle .title {
+  font-family: var(--vp-font-family-title);
+  font-weight: 700;
+}
+
+/* 键盘用户保留清晰焦点，鼠标点击不额外显示 */
+:focus-visible {
+  outline: 3px solid var(--vp-c-brand-1);
+  outline-offset: 3px;
+}
+
+/* 尊重系统的减少动画偏好 */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .petals,
+  .cursor-glow,
+  #live2d-widget {
+    display: none !important;
+  }
+}
+
+/* ========== 前端视觉系统 v2 ========== */
+html { scroll-padding-top: 80px; }
+
+body {
+  line-height: 1.7;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.VPNavBar {
+  border-bottom: 1px solid color-mix(in srgb, var(--vp-c-divider) 72%, transparent);
+  box-shadow: 0 6px 30px rgba(70, 42, 50, 0.045);
+}
+
+.dark .VPNavBar,
+.dark .VPNavBar.has-sidebar {
+  background: rgba(26, 22, 32, 0.86) !important;
+}
+
+.vp-doc { line-height: 1.85; }
+.vp-doc > p,
+.vp-doc > ul,
+.vp-doc > ol { color: var(--vp-c-text-2); }
+
+.vp-doc h2 {
+  margin-top: 2.25em;
+  padding-top: .7em;
+  border-top: 1px solid var(--vp-c-divider);
+}
+
+.vp-doc img { border-radius: var(--site-radius); }
+.vp-doc pre,
+.vp-doc div[class*='language-'] {
+  border: 1px solid color-mix(in srgb, var(--vp-c-divider) 72%, transparent);
+  box-shadow: var(--site-shadow-sm);
+}
+
+.doc-banner {
+  min-height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: var(--site-shadow-lg);
+}
+.doc-banner .doc-meta { align-items: center; }
+
+.VPFooter {
+  background: color-mix(in srgb, var(--sakura-light) 32%, var(--vp-c-bg));
+}
+
+@media (max-width: 768px) {
+  .doc-banner {
+    min-height: 190px;
+    border-radius: 0 0 18px 18px;
+  }
+  .vp-doc { line-height: 1.78; }
+}
+
+
+
+/* ========== 专升本笔记 · 真题答案块（Sakiko 体例） ========== */
+.vp-doc blockquote.answer-box,
+.vp-doc blockquote:has(strong),
+.vp-doc > blockquote {
+  border-left: 4px solid var(--accent-color);
+  background: color-mix(in srgb, var(--sakura-light) 70%, var(--vp-c-bg-soft));
+  border-radius: 0 12px 12px 0;
+  padding: 12px 16px;
+  margin: 12px 0 20px;
+}
+
+.dark .vp-doc blockquote {
+  background: rgba(201, 138, 152, 0.08);
+}
+
+/* 题目序号更醒目 */
+.vp-doc h3 {
+  scroll-margin-top: 96px;
+}
+
+/* 选项行距 */
+.vp-doc p {
+  margin: 0.55em 0;
+}
+
+/* 文档横幅下隐藏重复 h1（frontmatter 已展示） */
+.VPDoc .doc-banner + * h1:first-child,
+.vp-doc > h1:first-of-type {
+  /* 保留大纲锚点，但弱化重复标题：用 CSS 不删，避免 TOC 错位 */
+}
+
+/* 侧栏文章列表间距 */
+.VPSidebarItem .text {
+  font-size: 13.5px;
+}
+
+/* PDF 备用区（折叠次要） */
+.pdf-frame {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 12px 0;
+  background: var(--vp-c-bg-soft);
+}
+.pdf-embed {
+  width: 100%;
+  height: 70vh;
+  border: 0;
+  display: block;
+}
+.pdf-hint {
+  font-size: 13px;
+  color: var(--vp-c-text-2);
+  margin: 6px 0 16px;
+}
+
+/* 首页卡片 */
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin: 24px 0 40px;
+}
+.home-card {
+  display: block;
+  padding: 18px 18px 16px;
+  border-radius: 16px;
+  border: 1px solid color-mix(in srgb, var(--vp-c-divider) 80%, transparent);
+  background: color-mix(in srgb, var(--sakura-light) 45%, var(--vp-c-bg));
+  text-decoration: none !important;
+  color: inherit !important;
+  box-shadow: var(--site-shadow-sm);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.home-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--site-shadow-lg);
+}
+.home-card h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  color: var(--accent-color);
+  border: 0;
+  padding: 0;
+}
+.home-card p {
+  margin: 0;
+  font-size: 14px;
+  color: var(--vp-c-text-2);
+}
+
+/* 顶部 hero 简化 */
+.hero-sakura {
+  margin: 12px 0 8px;
+  padding: 28px 24px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, rgba(228,89,111,.18), rgba(255,233,201,.35));
+  border: 1px solid color-mix(in srgb, var(--sakura-pink) 45%, transparent);
+}
+.dark .hero-sakura {
+  background: linear-gradient(135deg, rgba(201,138,152,.16), rgba(39,33,48,.9));
+}
+.hero-sakura h1 {
+  margin: 0 0 8px;
+  font-family: var(--vp-font-family-title);
+  font-size: 30px;
+  border: 0;
+  padding: 0;
+}
+.hero-sakura p {
+  margin: 0;
+  color: var(--vp-c-text-2);
+}
+
+/* Live2D 控件微调 */
+.live2d-restore {
+  position: fixed;
+  left: 12px;
+  bottom: 20px;
+  z-index: 100;
+  border: 1px solid var(--vp-c-divider);
+  background: var(--vp-c-bg);
+  border-radius: 999px;
+  padding: 6px 12px;
+  cursor: pointer;
+  box-shadow: var(--site-shadow-sm);
+}
+.live2d-close {
+  position: fixed;
+  left: 176px;
+  bottom: 280px;
+  z-index: 100;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid var(--vp-c-divider);
+  background: var(--vp-c-bg);
+  cursor: pointer;
+}
+@media (max-width: 900px) {
+  .live2d-close, .live2d-restore { display: none; }
+}

@@ -3,6 +3,12 @@
 > 面向计划 **出国留学 / 海外求职移民 / 海外生活** 的系统性个人指南。
 > 由个人整理维护，涵盖从「为什么要出去」到「如何落地与长期发展」的完整路径。
 
+## 🌐 在线网站
+
+**https://wpc725562-dotcom.github.io/overseas-development-guide/**
+
+> VitePress 构建 · 与专升本笔记站同款 Sakura 主题。本地预览：`npm run docs:dev`
+
 ## 📌 内容导航
 
 | 板块 | 目录 | 说明 |
@@ -11,6 +17,7 @@
 | 💼 海外求职与移民 | [`docs/career-immigration/`](docs/career-immigration/) | 简历、求职渠道、面试、工签、移民路径 |
 | 🏡 海外生活 | [`docs/living-abroad/`](docs/living-abroad/) | 落地安顿、租房、税务保险、文化适应 |
 | ✅ 清单与工具 | [`docs/checklists/`](docs/checklists/) | 各种 checklist、模板、资源汇总表 |
+| 👤 个人专属 | [`docs/personal/`](docs/personal/) | 个人路线图、行动表、官方核对清单 |
 
 ## 🚀 快速开始
 
@@ -35,19 +42,24 @@
 ```text
 overseas-development-guide/
 ├── README.md                 # 本文件，总入口
-├── docs/
-│   ├── read-me.md            # 使用方式与决策框架
-│   ├── 01-决策规划/           # 起心动念 → 明确方向
+├── package.json              # VitePress 站点脚本
+├── .github/workflows/deploy.yml  # GitHub Pages 自动部署
+├── docs/                     # VitePress 站点源
+│   ├── index.md              # 站点首页
+│   ├── .vitepress/           # 配置 + Sakura 主题
+│   ├── read-me-first.md      # 决策框架
 │   ├── study-abroad/         # 留学板块
-│   ├── career-immigration/   # 求职 / 移民板块
+│   ├── career-immigration/   # 求职 / 移民板块（含 countries 国别速查）
 │   ├── living-abroad/        # 海外生活板块
-│   └── checklists/           # 清单、模板、资源
-└── CONTRIBUTING.md           # （可选）协作约定
+│   ├── personal/             # 个人专属板块
+│   ├── checklists/           # 清单、模板、资源
+│   └── public/               # favicon / live2d / 音乐
+└── scripts/                  # 迁移/维护脚本
 ```
 
 ## 📝 状态
 
-- [x] 仓库骨架
-- [ ] 留学板块逐步完善
-- [ ] 求职移民板块逐步完善
-- [ ] 海外生活板块逐步完善
+- [x] VitePress 在线网站（Sakura 主题，GitHub Pages 部署）
+- [x] 留学 / 求职移民 / 海外生活 三大板块
+- [x] 按国别速查（澳洲、日本）+ 个人专属板块
+- [ ] 内容持续完善

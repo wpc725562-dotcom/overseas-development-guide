@@ -10,3 +10,5 @@ Thumbs.db
 # 其他
 *.tmp
 node_modules/
+docs/.vitepress/dist/
+docs/.vitepress/cache/

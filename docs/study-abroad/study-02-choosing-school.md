@@ -1,3 +1,8 @@
+---
+title: "选校与定位"
+description: "国家选择、院校梯队、专业匹配、预算评估"
+---
+
 # 选校与定位 · Choosing a School
 
 > 目标：在预算和可及性约束内，选出「保底 / 匹配 / 冲刺」三档院校，并确定专业方向。
@@ -36,7 +41,7 @@
 > 💡 建议：把总预算做成表格，预留 10~20% buffer。
 
 ---
-**下一步**：确定目标后 → [申请材料与文书](study-03-application-materials.md)
+**下一步**：确定目标后 → [申请材料与文书](study-03-application-materials)
 
 ---
-[← 回留学总览](study-01-overview.md)
+[← 回留学总览](study-01-overview)

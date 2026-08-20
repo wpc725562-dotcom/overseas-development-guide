@@ -1,3 +1,8 @@
+---
+title: "核心 Checklist"
+description: "全流程可勾选清单"
+---
+
 # 核心 Checklist · Core Action Checklist
 
 > 全流程总清单。把每条目标达成后打勾，作为个人进度追踪。
@@ -34,4 +39,4 @@
 - [ ] 税务 / 社保身份确认
 
 ---
-[← 返回总览](../read-me-first.md) · [返回首页](../../README.md)
+[← 返回总览](../read-me-first) · [返回首页](/)

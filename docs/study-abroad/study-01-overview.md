@@ -1,3 +1,8 @@
+---
+title: "留学规划总览"
+description: "选校/文书/语言/签证/时间线/经费 全流程"
+---
+
 # 留学规划总览 · Study Abroad Overview
 
 > 覆盖 **选校定位 → 申请材料 → 语言考试 → 签证办理 → 入学前准备** 的完整流程。
@@ -6,12 +11,12 @@
 
 | 文件 | 内容 |
 | --- | --- |
-| [选校与定位](study-02-choosing-school.md) | 国家选择、院校梯队、专业匹配、预算评估 |
-| [申请材料与文书](study-03-application-materials.md) | 成绩单、推荐信、个人陈述 PS、简历 CV |
-| [语言考试规划](study-04-language-tests.md) | 雅思 / 托福 / 多邻国 / GRE / GMAT 选择与备考 |
-| [签证办理](study-05-visa.md) | 留学签证流程与材料（国别入内） |
-| [留学时间线](study-06-timeline.md) | 从开始准备到入学的完整时间轴 |
-| [奖学金与经费](study-07-funding.md) | 奖学金类型、申请渠道、经费规划 |
+| [选校与定位](study-02-choosing-school) | 国家选择、院校梯队、专业匹配、预算评估 |
+| [申请材料与文书](study-03-application-materials) | 成绩单、推荐信、个人陈述 PS、简历 CV |
+| [语言考试规划](study-04-language-tests) | 雅思 / 托福 / 多邻国 / GRE / GMAT 选择与备考 |
+| [签证办理](study-05-visa) | 留学签证流程与材料（国别入内） |
+| [留学时间线](study-06-timeline) | 从开始准备到入学的完整时间轴 |
+| [奖学金与经费](study-07-funding) | 奖学金类型、申请渠道、经费规划 |
 
 ## 二、典型时间线（以英语国家秋季入学为例）
 
@@ -34,10 +39,10 @@
 - [ ] 撰写并修改 PS / CV
 - [ ] 建立「院校 × deadline × 材料」追踪表
 - [ ] 预留经费预算（学费 + 生活费 + 保险 + 机票）
-- [ ] 签证材料盘点（见 [签证办理](study-05-visa.md)）
+- [ ] 签证材料盘点（见 [签证办理](study-05-visa)）
 
 ---
-**下一步**：先做 [选校与定位](study-02-choosing-school.md)，或直接查看 [核心 Checklist](../checklists/core-checklist.md)。
+**下一步**：先做 [选校与定位](study-02-choosing-school)，或直接查看 [核心 Checklist](../checklists/core-checklist)。
 
 ---
-[← 回总览](../read-me-first.md) · [返回首页](../../README.md)
+[← 回总览](../read-me-first) · [返回首页](/)

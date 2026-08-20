@@ -1,3 +1,8 @@
+---
+title: "🧭 整体决策框架"
+description: "为什么出去/去哪里/约束是什么"
+---
+
 # 用这个仓库之前：整体决策框架
 
 > 出国不是目的，是手段。这一篇帮你把「为什么出去」「去哪里」「怎么去」想清楚。
@@ -28,8 +33,8 @@
 
 ---
 **下一步**：根据你的答案，进入对应板块——
-- 想走学历路线 → [留学规划总览](study-abroad/study-01-overview.md)
-- 想直接找工作 → [海外求职总览](career-immigration/career-01-overview.md)
+- 想走学历路线 → [留学规划总览](study-abroad/study-01-overview)
+- 想直接找工作 → [海外求职总览](career-immigration/career-01-overview)
 
 ---
-[← 返回首页](../README.md)
+[← 返回首页](/)
