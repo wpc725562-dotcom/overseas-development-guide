@@ -4,7 +4,6 @@
       <CursorGlow />
       <ReadingProgress />
       <SakuraPetals />
-      <MusicPlayer />
     </template>
 
     <template #doc-before>
@@ -18,7 +17,7 @@
           </template>
           <span aria-current="page">{{ frontmatter.title || '正文' }}</span>
         </nav>
-        <h1 class="doc-title">{{ frontmatter.title || '专升本笔记' }}</h1>
+        <h1 class="doc-title">{{ frontmatter.title || '出国发展指南' }}</h1>
         <div class="doc-meta" v-if="frontmatter.description">
           <span class="doc-date">{{ frontmatter.description }}</span>
         </div>
@@ -40,7 +39,6 @@ import { computed, watch, nextTick, onMounted, onUnmounted } from 'vue'
 import SakuraPetals from './components/SakuraPetals.vue'
 import ReadingProgress from './components/ReadingProgress.vue'
 import BackToTop from './components/BackToTop.vue'
-import MusicPlayer from './components/MusicPlayer.vue'
 import Live2DWidget from './components/Live2DWidget.vue'
 import CursorGlow from './components/CursorGlow.vue'
 import CopyToast from './components/CopyToast.vue'
