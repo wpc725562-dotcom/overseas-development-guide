@@ -22,6 +22,7 @@
 - 目标**澳洲** → [澳洲签证/语言/求职平台速查](docs/career-immigration/countries/australia.md)
 - 目标**日本** → [日本人文签/语言/求职平台速查](docs/career-immigration/countries/japan.md)
 - 想快速列 To-do → [核心 Checklist](docs/checklists/core-checklist.md)
+- 👤 **我的定制路线**（广东/全日制本科/信息安全/主攻日本）→ [个人专属板块](docs/personal/_index.md)
 
 ## 🤝 说明
 
