@@ -1,0 +1,119 @@
+name: 🚨 Auto Patrol - 自动巡检
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/**'
+      - 'package.json'
+      - 'package-lock.json'
+  schedule:
+    - cron: '0 3 * * 0'  # 每周日凌晨 3 点
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: auto-patrol-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  patrol:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      # ===== P0: 站点构建检查 =====
+      - name: '🔨 [P0] 站点构建检查'
+        id: build_check
+        continue-on-error: true
+        run: |
+          if npm run docs:build 2>&1; then
+            echo "status=passed" >> $GITHUB_OUTPUT
+            echo "✅ 构建成功"
+          else
+            echo "status=failed" >> $GITHUB_OUTPUT
+            echo "❌ 构建失败"
+          fi
+
+      # ===== P0: 死链检查 =====
+      - name: '🔗 [P0] 死链检查'
+        id: link_check
+        continue-on-error: true
+        run: |
+          REPORT="knowledge/link-report.md"
+          mkdir -p knowledge
+          echo "# 🔗 死链检查报告" > "$REPORT"
+          echo "- 检查时间: $(date '+%Y-%m-%d %H:%M')" >> "$REPORT"
+          echo "" >> "$REPORT"
+          if npm run health:check --silent 2>&1; then
+            echo "status=passed" >> $GITHUB_OUTPUT
+            echo "- ✅ 无死链" >> "$REPORT"
+          else
+            echo "status=warning" >> $GITHUB_OUTPUT
+            echo "- ⚠️ 存在死链（见下方输出）" >> "$REPORT"
+            npm run health:check --silent >> "$REPORT" 2>&1 || true
+          fi
+
+      # ===== P1: 文件编码检查 =====
+      - name: '📋 [P1] 编码与乱码检查'
+        id: quality_check
+        continue-on-error: true
+        run: |
+          REPORT="knowledge/quality-report.md"
+          mkdir -p knowledge
+          ISSUES=0
+          echo "# 📋 质量体检报告" > "$REPORT"
+          echo "- 检查时间: $(date '+%Y-%m-%d %H:%M')" >> "$REPORT"
+          echo "" >> "$REPORT"
+          for file in $(find docs -name "*.md"); do
+            if grep -qP '\x{FFFD}' "$file" 2>/dev/null; then
+              echo "- ❌ $file: 包含乱码字符" >> "$REPORT"
+              ((ISSUES++))
+            fi
+          done
+          if [ "$ISSUES" -eq 0 ]; then
+            echo "- ✅ 无乱码" >> "$REPORT"
+            echo "status=passed" >> $GITHUB_OUTPUT
+          else
+            echo "status=warning" >> $GITHUB_OUTPUT
+          fi
+          echo "" >> "$REPORT"
+          echo "- 问题数: $ISSUES" >> "$REPORT"
+
+      # ===== 提交报告 =====
+      - name: '📤 提交巡检报告'
+        if: always()
+        run: |
+          git config user.name "Auto Patrol Bot"
+          git config user.email "auto-patrol@overseas-development-guide"
+          git add knowledge/ 2>/dev/null || true
+          if ! git diff --cached --quiet; then
+            git commit -m "🚨 auto-patrol: $(date '+%Y-%m-%d') 巡检报告自动提交"
+            git push
+            echo "✅ 报告已提交"
+          else
+            echo "ℹ️ 无新报告"
+          fi
+
+      # ===== 汇总 =====
+      - name: '📝 巡检结论'
+        if: always()
+        run: |
+          echo "## 巡检结果" >> $GITHUB_STEP_SUMMARY
+          echo "- 构建: ${{ steps.build_check.outputs.status }}" >> $GITHUB_STEP_SUMMARY
+          echo "- 死链: ${{ steps.link_check.outputs.status }}" >> $GITHUB_STEP_SUMMARY
+          echo "- 质量: ${{ steps.quality_check.outputs.status }}" >> $GITHUB_STEP_SUMMARY

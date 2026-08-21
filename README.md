@@ -1,5 +1,13 @@
 # 出国发展指南 · Overseas Development Guide
 
+<p align="center">
+  <img src="https://img.shields.io/badge/出国发展指南-留学·求职·生活-blue?style=for-the-badge&logo=github" alt="Badge">
+  <img src="https://img.shields.io/badge/主攻-日本人文签-brightgreen?style=for-the-badge" alt="Japan">
+  <img src="https://img.shields.io/badge/远期-澳洲482%2F189%2F190-orange?style=for-the-badge" alt="Australia">
+  <img src="https://img.shields.io/badge/状态-持续完善-yellow?style=for-the-badge" alt="Status">
+  <img src="https://img.shields.io/badge/信息核验-8%2F8%20已核验-red?style=for-the-badge" alt="Verified">
+</p>
+
 > 面向计划 **出国留学 / 海外求职移民 / 海外生活** 的系统性个人指南。
 > 由个人整理维护，涵盖从「为什么要出去」到「如何落地与长期发展」的完整路径。
 
@@ -29,7 +37,7 @@
 - 目标**澳洲** → [澳洲签证/语言/求职平台速查](docs/career-immigration/countries/australia.md)
 - 目标**日本** → [日本人文签/语言/求职平台速查](docs/career-immigration/countries/japan.md)
 - 想快速列 To-do → [核心 Checklist](docs/checklists/core-checklist.md)
-- 👤 **我的定制路线**（广东/全日制本科/信息安全/主攻日本）→ [个人专属板块](docs/personal/_index.md)
+- 👤 **我的定制路线**（广东/全日制本科/信息安全/主攻日本）→ [个人专属板块](docs/personal/index.md)
 
 ## 🤝 说明
 

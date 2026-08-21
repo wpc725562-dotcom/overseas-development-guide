@@ -7,7 +7,9 @@
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "docs:preview": "vitepress preview docs",
+    "health:check": "node scripts/check-links.mjs",
+    "health:quick": "node scripts/check-links.mjs --quick"
   },
   "devDependencies": {
     "markdown-it-mathjax3": "^4.3.2",
