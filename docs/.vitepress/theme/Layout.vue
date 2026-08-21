@@ -24,6 +24,10 @@
       </div>
     </template>
 
+    <template #doc-after>
+      <CommentBox v-if="showBanner" />
+    </template>
+
     <template #layout-bottom>
       <Live2DWidget />
       <BackToTop />
@@ -42,6 +46,7 @@ import BackToTop from './components/BackToTop.vue'
 import Live2DWidget from './components/Live2DWidget.vue'
 import CursorGlow from './components/CursorGlow.vue'
 import CopyToast from './components/CopyToast.vue'
+import CommentBox from './components/CommentBox.vue'
 
 const { frontmatter } = useData()
 const route = useRoute()

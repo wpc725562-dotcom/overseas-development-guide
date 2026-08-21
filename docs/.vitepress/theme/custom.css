@@ -471,3 +471,44 @@ body {
 @media (max-width: 900px) {
   .live2d-close, .live2d-restore { display: none; }
 }
+
+/* ========== giscus 评论区适配 ========== */
+.giscus-wrap {
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid var(--vp-c-divider);
+}
+.giscus-wrap .giscus-title {
+  font-size: 18px;
+  color: var(--vp-c-text-1);
+  margin-bottom: 16px;
+}
+/* giscus iframe 宽度与容器一致 */
+.giscus-wrap .giscus,
+.giscus-wrap iframe {
+  width: 100% !important;
+  border: none;
+}
+
+/* ========== 暗色模式增强 ========== */
+.dark .vp-doc table {
+  border-color: var(--vp-c-divider);
+}
+.dark .vp-doc th {
+  background: rgba(201, 138, 152, 0.12);
+}
+.dark .vp-doc blockquote {
+  border-left-color: var(--sakura-pink);
+}
+/* 暗色下代码块更柔和 */
+.dark .vp-doc div[class*='language-'] {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+/* 暗色下图片边框（深色图不易区分） */
+.dark .vp-doc img {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+}
+/* 暗色下表格文字对比度 */
+.dark .vp-doc td {
+  color: var(--vp-c-text-2);
+}
