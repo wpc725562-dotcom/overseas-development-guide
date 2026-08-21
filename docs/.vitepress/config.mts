@@ -15,6 +15,12 @@ export default defineConfig({
   head: [
     ['link', { rel: 'icon', href: `${base}favicon.svg` }],
     ['meta', { name: 'theme-color', content: '#e4596f' }],
+    // PWA
+    ['link', { rel: 'manifest', href: `${base}manifest.json` }],
+    ['link', { rel: 'apple-touch-icon', href: `${base}icon-192.png` }],
+    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
+    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'default' }],
+    ['script', {}, `if ('serviceWorker' in navigator) { window.addEventListener('load', () => navigator.serviceWorker.register('${base}sw.js').catch(() => {})); }`],
     ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
     ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
     ['link', { href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600;700&display=swap', rel: 'stylesheet' }],

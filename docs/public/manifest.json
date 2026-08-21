@@ -1,0 +1,22 @@
+{
+  "name": "出国发展指南",
+  "short_name": "出国发展",
+  "description": "出国发展指南 · PWA",
+  "lang": "zh-CN",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff9fb",
+  "theme_color": "#e4596f",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
