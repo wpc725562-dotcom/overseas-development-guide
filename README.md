@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/主攻-日本人文签-brightgreen?style=for-the-badge" alt="Japan">
   <img src="https://img.shields.io/badge/远期-澳洲482%2F189%2F190-orange?style=for-the-badge" alt="Australia">
   <img src="https://img.shields.io/badge/状态-持续完善-yellow?style=for-the-badge" alt="Status">
-  <img src="https://img.shields.io/badge/信息核验-8%2F8%20已核验-red?style=for-the-badge" alt="Verified">
+  <img src="https://img.shields.io/badge/信息核验-8%2F8%20已核验-brightgreen?style=for-the-badge" alt="Verified">
 </p>
 
 > 面向计划 **出国留学 / 海外求职移民 / 海外生活** 的系统性个人指南。
